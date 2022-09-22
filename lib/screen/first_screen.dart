@@ -9,7 +9,25 @@ class FirstScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      body: Text("Page 1", style: TextStyle(fontSize: 45.0, color: Colors.green),
+      body: Column(
+        children: [
+          Container(
+            child: TextButton(
+              child: Text("Go to Second Page", style: TextStyle(fontSize: 40.0, color: Colors.red)),
+              onPressed: () {
+                Navigator.pushNamed(context, "/second");
+              },
+            ),
+          ),
+          Container(
+            child: TextButton(
+              child: Text("Last Page", style: TextStyle(fontSize: 40.0, color: Colors.orange)),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          )
+        ],
       ),
     );
   }

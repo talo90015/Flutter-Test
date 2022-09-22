@@ -2,6 +2,7 @@
 import 'package:demo/screen/first_screen.dart';
 import 'package:demo/screen/home_screen.dart';
 import 'package:demo/screen/second_screen.dart';
+import 'package:demo/screen/third_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppEntryPoint extends StatelessWidget{
@@ -11,7 +12,8 @@ class AppEntryPoint extends StatelessWidget{
       routes: {
         "/":(BuildContext context) => HomeScreen(),
         "/first": (BuildContext context) => FirstScreen(),
-        "/second": (BuildContext context) => SecondScreen()
+        "/second": (BuildContext context) => SecondScreen(),
+        "/third":(BuildContext context) => ThirdScreen()
       },
       initialRoute: "/",
     );

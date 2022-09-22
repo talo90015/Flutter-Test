@@ -1,11 +1,8 @@
 
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
-class SecondScreen extends StatelessWidget{
-
+class ThirdScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -13,9 +10,9 @@ class SecondScreen extends StatelessWidget{
         children: [
           Container(
             child: TextButton(
-              child: Text("Go to Third Page", style: TextStyle(fontSize: 40.0, color: Colors.yellow)),
+              child: Text("Go to Home",style: TextStyle(fontSize: 40.0, color: Colors.green)),
               onPressed: () {
-                Navigator.pushNamed(context, "/third");
+                Navigator.pushNamed(context, "/");
               },
             ),
           ),

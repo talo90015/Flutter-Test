@@ -15,7 +15,7 @@ class AppEntryPoint extends StatelessWidget{
         "/second": (BuildContext context) => SecondScreen(),
         "/third":(BuildContext context) => ThirdScreen()
       },
-      initialRoute: "/",
+      initialRoute: "/first",
     );
   }
 }

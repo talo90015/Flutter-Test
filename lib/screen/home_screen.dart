@@ -6,12 +6,7 @@ class HomeScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      body: TextButton(
-        child: Text("Go to First Page", style: TextStyle(fontSize: 40.0, color: Colors.grey)),
-        onPressed: () {
-          Navigator.pushNamed(context, "/first");
-        },
-      )
+      
     );
   }
 }

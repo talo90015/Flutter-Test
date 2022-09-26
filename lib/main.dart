@@ -3,13 +3,15 @@ import 'package:demo/blog/account.dart';
 import 'package:demo/blog/hobby.dart';
 import 'package:demo/blog/home.dart';
 import 'package:demo/blog/introduction.dart';
+import 'package:demo/calculator/calculator.dart';
 import 'package:demo/screen/color_exchange.dart';
 import 'package:demo/screen/colorful_screen.dart';
 import 'package:demo/screen/first_screen.dart';
 import 'package:demo/screen/home_screen.dart';
 import 'package:demo/screen/second_screen.dart';
 import 'package:demo/screen/third_screen.dart';
-import 'package:flutter/material.dart';
+import 'package:demo/screen/todo_input_screen.dart';
+import 'package:flutter/material.dart';       
 
 class AppEntryPoint extends StatelessWidget{
   @override
@@ -21,9 +23,11 @@ class AppEntryPoint extends StatelessWidget{
         "/introduction":(BuildContext context) => Introduction(),
         "/hobby":(BuildContext context) => Hobby(),
         "/color":(BuildContext content) => ColorfulScreen(),
-        "/exColor":(BuildContext content) => ColorExchange()
+        "/exColor":(BuildContext content) => ColorExchange(),
+        "/inputText":(BuildContext content) => TodoInputScreen(),
+        "/calculator":(BuildContext content) => Calculator()
       },
-      initialRoute:"/exColor"
+      initialRoute:"/calculator"
     );
   }
 }

@@ -29,7 +29,7 @@ class _TodoInputScreen extends State<TodoInputScreen>{
           hintText: "Input"
         ),
         controller: textString,
-        onSubmitted: (value) {
+        onChanged: (value) {
           setState(() {
             this.widget.list.add(value);
             textString.clear();

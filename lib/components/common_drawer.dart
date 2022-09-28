@@ -23,6 +23,24 @@ class CommonDrawer{
             onTap: () {
               Navigator.pushNamed(context, "/second");
             },
+          ),
+          ListTile(
+            title: const Text("顏色變化"),
+            onTap: () {
+              Navigator.pushNamed(context, "/color");
+            },
+          ),
+          ListTile(
+            title: const Text("工作紀錄"),
+            onTap: () {
+              Navigator.pushNamed(context, "/task");
+            },
+          ),
+          ListTile(
+            title: const Text("工作數量"),
+            onTap: () {
+              Navigator.pushNamed(context, "/amount");
+            },
           )
         ],
       ),

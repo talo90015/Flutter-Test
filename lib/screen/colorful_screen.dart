@@ -1,5 +1,7 @@
 
 
+import 'package:demo/components/common_drawer.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -33,6 +35,8 @@ class _ColorfulScreen extends State<ColorfulScreen>{
       );
     }
     return Scaffold(
+      appBar: AppBar(),
+      drawer: CommonDrawer.drawer(context),
       body: Container(
         alignment: Alignment.center,
         child: Column(
